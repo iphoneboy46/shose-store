@@ -1514,7 +1514,8 @@ i {
 
     .section__product-arrivals {
         width: 100%;
-        
+        background-color: black;
+        height: 400px;
     }
 
     .menu--bar i {
@@ -1523,12 +1524,10 @@ i {
     }
 
     .section__img {
+        
         width: 100%;
         position: relative;
         overflow: hidden;
-        background-image: none;
-        background-color: black;
-        height: 600px;
     }
 
     .btn-info {
@@ -1584,7 +1583,7 @@ i {
 
     .slice-img {
         position: absolute;
-        top: 350px;
+        top: 250px;
         right: 0%;
         width: 500px;
     }
@@ -1620,7 +1619,7 @@ i {
 
     .slice-img-2 {
         position: absolute;
-        top: 250px;
+        top: 200px;
         right: -5px;
         width: 500px;
     }
@@ -1663,7 +1662,7 @@ i {
 
     .slice-img-3 {
         position: absolute;
-        top: 250px;
+        top: 200px;
         right: 0px;
         width: 100%;
     }

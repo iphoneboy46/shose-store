@@ -1620,7 +1620,7 @@ i {
 
     .slice-img-2 {
         position: absolute;
-        top: 250px;
+        top: 200px;
         right: -5px;
         width: 500px;
     }
@@ -1663,7 +1663,7 @@ i {
 
     .slice-img-3 {
         position: absolute;
-        top: 250px;
+        top: 200px;
         right: 0px;
         width: 100%;
     }
