@@ -1,0 +1,46 @@
+.header__menu-ui{
+    padding: 50px;
+    color: black !important;
+    position: fixed;
+    background-color: white;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    animation: menuUl linear 0.5s;
+}
+
+.menuActive{
+    display: block;
+}
+
+@keyframes menuUl{
+    from {
+        left: 1000px;   
+        opacity: 1;
+    }
+    to {
+        left: 0;
+        opacity: 0
+    }
+}
+
+.header__menu-ui a{
+    font-size:30px;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+.header__menu-ui li{
+    margin-bottom: 20px
+}

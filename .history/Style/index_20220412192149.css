@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+}
+
+header{
+    position:fixed;
+
+}
+
+.header__menu-top{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo p strong {
+    color:white
+
+}
+
+.header__menu-list{
+    list-style: none;
+    
+}
+
+.header__menu-item{
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.header__menu-item a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+

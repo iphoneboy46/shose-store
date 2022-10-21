@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transition:0.6s;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+header.sticky{
+    background-color: white;
+    padding: 5px 100px;
+}
+
+.header__menu-top{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo strong {
+    font-weight: 700;
+    letter-spacing:1px;
+    font-size: 20px;
+    color:white;
+}
+
+header.sticky strong{
+    color:black;
+}
+
+.header__logo p{
+    color:white;
+}
+
+header.sticky p {
+    color:black;
+}
+
+.header__menu-list{
+    list-style: none;
+    position: relative;
+}
+
+.header__menu-item{
+    display:inline-block;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.header__menu-item a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color:white;
+    background-color: transparent;
+    font-size:20px;
+    font-weight: 400;
+    transition: all 0.5s linear;
+    position: relative;
+    z-index: 1;
+}
+
+.header__menu-item a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 0;
+  border-bottom: 1px solid;
+  z-index: -1;
+  transition: width 1s ease-in-out;
+}
+
+.header__menu-item a:hover::before{
+    width: 100%;
+}
+
+
+header.sticky a {
+    color:black;
+}
+
+.section__img img{
+    width: 100%;
+    height: auto;
+}
+
+.section__content{
+   
+}
+
+.section__content-new{
+    width: 100%;
+   display: block;
+   margin: 0 auto;
+}
+
+.section__content-new h2{
+    font-size: 30px;
+    padding: 50px 0 20px 0;
+    font-weight: border;
+
+}
+
+.section__content-new h4{
+    padding: 30px 0;
+    font-weight: border;
+    
+}
+
+.section__content-product{
+    padding-top: 20px;
+    margin-left: 150px;
+}
+
+.product-item{
+    margin-left: 40px;
+    box-shadow:0px 0px 10px 0px rgba(70, 70, 70);
+    padding: 10px;
+}

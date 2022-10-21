@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="Style/app.css">
+    <link rel="stylesheet" href="Style/grid.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/aos.css">
+    <link rel="stylesheet" href="Style/menuUI.css">
+    <link rel="stylesheet" href="Style/AllProduct.css">
+    <link rel="stylesheet" href="Icons/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="grid wide">
+            <div class="header__menu-top">
+                <div class="header__logo">
+                    <p><Strong>MT</Strong> Stores</p>
+                </div>
+                <div class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="http://">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="http://">Collection</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="http://">Shoes</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="http://">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__card">
+                    <div class="card">
+                        <h6 class="card--quantity">0</h6>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping-cart">
+            <div class="cart-header">
+                <h2 class="cart-title">Products Cart</h2>
+                <i class="fa-solid fa-xmark cart-exits"></i>
+            </div>
+            <hr>
+            <div class="list-Card">
+                <div class="list-img">
+                    <img src="images/no-cart.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="cart-total">
+                <h3>Total number of products: <p class="total--quantity"></p>
+                </h3>
+                <h2>Total: <p class="total--Value"></p>d</h2>
+            </div>
+            <div class="cart-button">
+                <div class="btn-see">
+                    <a href="">View cart</a>
+                </div>
+                <div class="btn-payment">
+                    <a href="">Payment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="product-section--banner">
+            <h1>All products</h1>
+        </div>
+        <div class="wide">
+            <div class="product__menu--list">
+                <div class="product__popular">
+                    <div class="product__popular--select">
+                        <span class="sBtn-text">Popular</span> 
+                        <i style="color: black;" class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <ul class="product__popular--options">
+                        <li class="product__popular--option">
+                            <span class="option-text">Popular</span>
+                        </li>
+                        <li class="product__popular--option">
+                            <span class="option-text">New</span>
+                        </li>
+                        <li class="product__popular--option">
+                            <span class="option-text">Sales</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product__menu-items">
+                    <ul>
+                        <li>All</li>
+                        <li>Nike</li>
+                        <li>Adidas</li>
+                        <li>Puma</li>
+                        <li>Fila</li>
+                    </ul>
+                </div>
+                <div class="product__filter">
+                    <ul name="" id="">
+                        <li value="">Gia thap den cao</li>
+                        <li value="">Gia cao den thap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/header.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/aos.js"></script>
+    <script src="script/allproduct.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        AOS.init(
+            {
+                durations: 1000,
+            }
+        )
+    </script>
+</body>
+
+</html>

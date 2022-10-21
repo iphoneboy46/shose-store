@@ -1,0 +1,33 @@
+.header__menu-ui{
+    padding: 50px;
+    color: black !important;
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    display: none;
+}
+
+.header__menu-ui a{
+    font-size:30px;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+@media only screen and (max-width: 740px){
+    .header__menu-ui{
+        display: block;
+    }
+}

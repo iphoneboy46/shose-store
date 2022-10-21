@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__menu-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__img{
+    width: 100px;
+    height: 100px;
+}
+
+.header__img img{
+    width: 100%;
+}
+

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transition:0.6s;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+header.sticky{
+    background-color: white;
+    padding: 5px 100px;
+}
+
+.header__menu-top{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo strong {
+    font-weight: 700;
+    letter-spacing:1px;
+    font-size: 20px;
+    color:white;
+}
+
+header.sticky strong{
+    color:black;
+}
+
+.header__logo p{
+    color:white;
+}
+
+header.sticky p {
+    color:black;
+}
+
+.header__menu-list{
+    list-style: none;
+    position: relative;
+}
+
+.header__menu-item{
+    display:inline-block;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.header__menu-item a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color:white;
+    background-color: transparent;
+    font-size:20px;
+    font-weight: 400;
+    transition: all 0.5s linear;
+    position: relative;
+    z-index: 1;
+}
+
+.header__menu-item a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 0;
+  border-bottom: 1px solid;
+  z-index: -1;
+  transition: width 1s ease-in-out;
+}
+
+.header__menu-item a:hover::before{
+    width: 100%;
+}
+
+
+header.sticky a {
+    color:black;
+}
+
+.section__img img{
+    width: 100%;
+    height: auto;
+}
+
+.section__content{
+   
+}
+
+.section__content-new{
+   margin-left: 50%;
+   transform: translateX(-50%);
+}
+
+.section__content-new h2{
+    font-size: 30px;
+    padding: 50px 0 20px 0;
+    font-weight: border;
+
+}
+
+.section__content-new h5{
+    padding:10px 0 20px 0;
+    font-weight: border;
+}
+
+.section__content-product{
+    padding-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+    height:2000px;
+    position: relative;
+}
+
+.product__item-1{
+    box-shadow:0px 0px 10px 0px rgba(70, 70, 70);
+    padding: 40px;
+    position:absolute;
+    top: 10px;
+    left: 35px;
+    z-index: 2;
+    background-color:white;
+}
+
+.product__item-1::before{
+    content: "New";
+    top: 0;
+    left: 0;
+    background-color:black;
+}
+
+
+.product__item-1 img{
+    width: 100%;
+    height: auto;
+}
+
+.product__item-1 h3{
+    padding: 10px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.product__item-1 p{
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.product__item-1 strong{
+    color: red;
+
+}
+
+.product__item-1 span{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.product__item-1 i{
+    
+    color: rgb(242, 186, 17);
+}
+
+
+.product__item-2{
+    box-shadow:0px 0px 10px 0px rgba(70, 70, 70);
+    padding: 50px;
+    background-color:rgba(244, 240, 240, 0.854);
+    position:absolute;
+    top: 55px;
+    right: 0;
+    z-index: 1;
+}
+
+
+.product__item-2 img{
+    width: 100%;
+    height: auto;
+}
+
+.product__item-2 h3{
+    padding: 10px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.product__item-2 p{
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.product__item-2 strong{
+    color: red;
+
+}
+
+.product__item-2 span{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.product__item-2 span i{
+    color: rgb(242, 186, 17);
+}
+
+
+
+
+
