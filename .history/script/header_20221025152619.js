@@ -32,7 +32,6 @@ menuBar.onclick = function() {
     }else{
         icon.classList.replace('fa-xmark','fa-bars');
     }
-    modal.classList.toggle('menuActive')
     barBtn.classList.toggle('menuActive')
 }
 

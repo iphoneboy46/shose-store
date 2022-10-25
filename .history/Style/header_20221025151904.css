@@ -15,10 +15,6 @@ header {
     background-color: black;
 }
 
-.header__menu-ui{
-    display: none;
-}
-
 header.sticky {
     background-color: white;
     padding: 5px 100px;
@@ -366,11 +362,6 @@ header.sticky i {
         z-index: 100;
     }
 
-    .header__menu-ui{
-        display: none;
-    }
-    
-
     .header__menu-top {
         display: none;
     }
@@ -425,9 +416,8 @@ header.sticky i {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: start;
+        text-align: center;
         overflow: hidden;
         display: none;
         animation: menuUl linear 0.7s;
@@ -517,7 +507,6 @@ header.sticky i {
         display: flex;
         color: white;
         background-color: black;
-        padding: 10px 20px;;
         align-items: center;
         justify-content: space-between;
         
@@ -525,13 +514,10 @@ header.sticky i {
 
     .header__bar--logo p {
         color: white;
-        
+        margin-left: 50px;
     }
 
     .card i {
-        padding: 0;
-        margin: 0;
-        font-size:20px;
         color: white;
     }
 
@@ -547,54 +533,7 @@ header.sticky i {
 
     .header__bars i {
         color: white;
-        font-size: 20px;
-    }
-
-    .header__menu-ui{
-        padding: 50px;
-        color: black !important;
-        position: fixed;
-        background-color: white;
-        top: 40px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1000;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        overflow: hidden;
-        display: none;
-        animation: menuUl linear 0.7s;
-    }
-    
-    .menuActive{
-        display: block;
-    }
-    
-    @keyframes menuUl{
-        from {
-            left: 1000px;   
-            opacity: 0;
-        }
-        to {
-            left: 0;
-            opacity: 1;
-        }
-    }
-    
-    .header__menu-ui a{
-        font-size:30px;
-        text-decoration: none;
-        padding: 20px;
-        color: black;
-    }
-    
-    .header__menu-ui li{
-        margin-bottom: 20px
+        margin-left: 20px;
     }
 
     /* shopping-cart */

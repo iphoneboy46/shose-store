@@ -15,10 +15,6 @@ header {
     background-color: black;
 }
 
-.header__menu-ui{
-    display: none;
-}
-
 header.sticky {
     background-color: white;
     padding: 5px 100px;
@@ -365,11 +361,6 @@ header.sticky i {
         width: 100%;
         z-index: 100;
     }
-
-    .header__menu-ui{
-        display: none;
-    }
-    
 
     .header__menu-top {
         display: none;

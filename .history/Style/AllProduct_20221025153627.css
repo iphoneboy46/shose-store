@@ -331,12 +331,4 @@
     .product__popular{
         display: none;
     }
-
-    .product__filter{
-        display: none;
-    }
-
-    #product__lists{
-        padding:0px 20px;
-    }
 }

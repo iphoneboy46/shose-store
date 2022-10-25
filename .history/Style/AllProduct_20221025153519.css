@@ -327,16 +327,4 @@
         letter-spacing: 1px;
         border-bottom: solid 2px white;
     }
-
-    .product__popular{
-        display: none;
-    }
-
-    .product__filter{
-        display: none;
-    }
-
-    #product__lists{
-        padding:0px 20px;
-    }
 }

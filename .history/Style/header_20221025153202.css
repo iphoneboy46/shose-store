@@ -15,10 +15,6 @@ header {
     background-color: black;
 }
 
-.header__menu-ui{
-    display: none;
-}
-
 header.sticky {
     background-color: white;
     padding: 5px 100px;
@@ -366,11 +362,6 @@ header.sticky i {
         z-index: 100;
     }
 
-    .header__menu-ui{
-        display: none;
-    }
-    
-
     .header__menu-top {
         display: none;
     }
@@ -517,7 +508,6 @@ header.sticky i {
         display: flex;
         color: white;
         background-color: black;
-        padding: 10px 20px;;
         align-items: center;
         justify-content: space-between;
         
@@ -529,9 +519,6 @@ header.sticky i {
     }
 
     .card i {
-        padding: 0;
-        margin: 0;
-        font-size:20px;
         color: white;
     }
 
@@ -547,7 +534,7 @@ header.sticky i {
 
     .header__bars i {
         color: white;
-        font-size: 20px;
+        margin-left: 20px;
     }
 
     .header__menu-ui{

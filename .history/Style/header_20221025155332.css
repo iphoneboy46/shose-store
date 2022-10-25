@@ -366,11 +366,6 @@ header.sticky i {
         z-index: 100;
     }
 
-    .header__menu-ui{
-        display: none;
-    }
-    
-
     .header__menu-top {
         display: none;
     }
