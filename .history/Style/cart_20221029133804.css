@@ -1,0 +1,42 @@
+.section__header{
+    margin-top: 100px;
+}
+
+.section__header > h1 {
+    text-align: center;
+    font-size:50px;
+    text-transform: uppercase;
+}
+
+.section__cart--item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__cart--item-quantity .btn-minus{
+    background-color: rgba(239, 239, 239, 0.918);
+    padding:10px 15px;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.section__cart--item-quantity .btn-plus{
+    border: none;
+    background-color: rgba(239, 239, 239, 0.918);
+    padding:10px 15px;
+    cursor: pointer;
+}
+
+.section__cart--item-quantity .num{
+    background-color:#fff;
+    text-align: center;
+    border-bottom:0;
+    border-top:0;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    padding:10px 15px;
+}
+
+

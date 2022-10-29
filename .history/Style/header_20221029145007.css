@@ -1,0 +1,650 @@
+body {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transition: 0.6s;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: black;
+}
+
+.header__menu-ui{
+    display: none;
+}
+
+header.sticky {
+    background-color: white;
+    padding: 5px 100px;
+}
+
+.header__menu-top {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo strong {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+header.sticky strong {
+    color: black;
+}
+
+.header__logo p {
+    color: white;
+}
+
+header.sticky p {
+    color: black;
+}
+
+.header__menu-list {
+    list-style: none;
+    position: relative;
+}
+
+.header__menu-item {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.header__menu-item a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.5s linear;
+    position: relative;
+    z-index: 1;
+}
+
+.header__menu-item a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-bottom: 1px solid;
+    z-index: -1;
+    transition: width 1s ease-in-out;
+}
+
+.header__menu-item a:hover::before {
+    width: 100%;
+}
+
+
+header.sticky a {
+    color: black;
+}
+
+header.sticky i {
+    color: black;
+}
+
+.header__card {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__card::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 20%;
+    height: 60px;
+}
+
+.card i {
+    color: white;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* shopping-cart */
+.shopping-cart {
+    z-index: 1000;
+    padding: 20px;
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    top: 80px;
+    right: -1200px;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+
+
+.shopping-cart .cart-title {
+    text-align: center;
+}
+
+.cart-header {
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.cart-header i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.list-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.list-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+
+.list-Card {
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 300px;
+    padding: 10px;
+}
+
+.cartItem{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 10px;
+   height: 120px;
+}
+
+.cart-img {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+
+}
+
+
+.cart-img img {
+    width: 100%;
+    height: auto;
+    padding: 1px
+}
+
+.cart-img h2 {
+    letter-spacing: 1px;
+
+}
+
+.cart-img h3 {
+    margin: 10px 0;
+
+}
+
+.cart-details {
+    padding: 0px 10px;
+
+}
+
+.cart-details h2 {
+    font-size: 18px;
+}
+
+.cart-details h3 {
+    font-size: 15px;
+}
+
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.total--quantity {
+    padding-left: 4px;
+    color: black;
+}
+
+.cart-total h3 {
+    display: flex;
+}
+
+.cart-total h2 {
+
+    display: flex;
+    color:#82CD47;
+}
+
+.total--Value {
+    color: #82CD47 !important;
+}
+
+.card-delete {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.fa-trash-can {
+    color: black !important;
+}
+
+
+
+.card--quantity {
+    position: absolute;
+    top: 2px;
+    right: 11px;
+    background-color: gray;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 25px;
+}
+
+
+.card a:hover .shopping-cart {
+    display: block;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-see {
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-see a {
+    text-decoration: uppercase;
+    padding: 10px 50px;
+    font-weight: bolder;
+    color: white !important;
+    text-decoration: none;
+}
+
+.btn-payment {
+    background-color: #3E6D9C;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-payment a {
+    text-transform: uppercase;
+    padding: 10px 50px;
+    font-weight: bolder;
+    color: white !important;
+    text-decoration: none;
+}
+
+/* quantity */
+
+
+.quantity span {
+    color: black;
+}
+
+.btn-minus {
+    background-color: rgba(239, 239, 239, 0.918);
+    padding: 0px 5px;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.num {
+    background-color: #fff;
+    text-align: center;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    padding: 0px 10px;
+    width: 50px;
+
+}
+
+.btn-plus {
+    border: none;
+    background-color: rgba(239, 239, 239, 0.918);
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.header__menu--bar {
+    display: none;
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .header__menu--bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .header__menu-ui{
+        display: none;
+    }
+    
+
+    .header__menu-top {
+        display: none;
+    }
+
+    .header__bar {
+        display: flex;
+        color: white;
+        background-color: black;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 10px;
+        
+    }
+
+    .header__bar--logo p {
+        color: white;
+        font-size:25px;
+    }
+
+    .card i {
+        font-size: 25px;
+        color: white;
+        margin-left:0px;
+        padding:0px;
+    }
+
+    .card--quantity-mb {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        background-color: gray;
+        color: white;
+        padding: 1px 6px;
+        border-radius: 25px;
+    }
+
+    .header__bars i {
+        color: white;
+       font-size:25px;
+    }
+
+    .header__menu-ui{
+        padding: 50px;
+        color: black !important;
+        position: fixed;
+        background-color: white;
+        top: 70px;
+        right: 0px;
+        bottom: 0;
+        z-index: 1000;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        overflow: hidden;
+        display: none;
+        animation: menuUl linear 0.7s;
+    }
+    
+    .menuActive{
+        display: block;
+    }
+    
+    @keyframes menuUl{
+        from {
+            right:-1000px;   
+            opacity: 0;
+        }
+        to {
+            right:0;
+            opacity: 1;
+        }
+    }
+    
+    .header__menu-ui a{
+        font-size:30px;
+        text-decoration: none;
+        padding: 20px;
+        color: black;
+    }
+    
+    .header__menu-ui li{
+        margin-bottom: 20px
+    }
+
+    .card-tablet{
+        position: relative;
+    }
+
+    
+
+
+    /* shopping-cart */
+    .shopping-cart {
+        padding: 20px;
+        width: 430px;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        right: -1200px;
+        transition: all 0.5s linear;
+    }
+
+    .shopping-cart .cart-title {
+        text-align: center;
+    }
+
+
+    .cart-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+   
+
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+
+    .header__menu--bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .header__menu-top {
+        display: none;
+    }
+
+    .header__bar {
+        display: flex;
+        color: white;
+        background-color: black;
+        padding: 10px 20px;;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .header__bar--logo p {
+        color: white;
+        
+    }
+
+    .card i {
+        padding: 0;
+        margin: 0;
+        font-size:20px;
+        color: white;
+    }
+
+    .card--quantity-mb {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        background-color: gray;
+        color: white;
+        padding: 1px 6px;
+        border-radius: 25px;
+    }
+
+    .header__bars i {
+        color: white;
+        font-size: 20px;
+    }
+
+    .header__menu-ui{
+        padding: 50px;
+        color: black !important;
+        position: fixed;
+        background-color: white;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        display: none;
+        animation: menuUl linear 0.7s;
+    }
+    
+    .menuActive{
+        display: block;
+    }
+    
+    @keyframes menuUl{
+        from {
+            left: 1000px;   
+            opacity: 0;
+        }
+        to {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    
+    .header__menu-ui a{
+        font-size:30px;
+        text-decoration: none;
+        padding: 20px;
+        color: black;
+    }
+    
+    .header__menu-ui li{
+        margin-bottom: 20px
+    }
+
+    /* shopping-cart */
+    .shopping-cart {
+        margin-top: 40px;
+        padding: 10px;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: none;
+        animation: animated 0.5s linear;
+    }
+
+    .shopping-cart .cart-title {
+        text-align: center;
+    }
+
+    .cart-header {
+        align-items: center;
+
+    }
+
+    .cart-header i {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .btn-see a {
+        padding: 5px 20px;
+        font-weight: bolder;
+        color: white !important;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn-payment a {
+        background-color: darkblue;
+        border-radius: 5px;
+        padding: 5px 20px;
+    }
+
+    .list-Card {
+        height: 400px;
+        padding: 10px;
+    }
+
+}

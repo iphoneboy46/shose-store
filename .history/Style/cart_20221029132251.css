@@ -1,0 +1,7 @@
+.section__header{
+    margin-top: 100px;
+}
+
+.section__header > h1 {
+    text-align: center;
+}
